@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+}
+
+ext.kotlinVersion = '1.4.10'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
